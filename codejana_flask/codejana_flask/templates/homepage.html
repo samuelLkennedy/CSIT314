@@ -1,0 +1,90 @@
+{% extends 'layouts.html' %} 
+
+{%block contentA%} 
+<div class="contentA">
+<div class="card text-center">
+    <div class="card-body">
+        <br><br><br>
+      <h2 class="card-title">Don't have an account and need road side assistance fast?</h2>
+      <h3 class="card-text">Request help without signing up here</h3>
+      <br>
+      <a href="#" class="btn btn-primary">Guest user</a>
+      <br><br><br>
+      <h3 class="card-text">Get help without an account ^</h3>
+    </div>
+  </div>
+</div>
+
+<script src="{{url_for('static',filename='main.js')}}"></script>
+{%endblock contentA%}
+
+{%block contentB%}
+Form Area
+{%endblock contentB%} 
+
+{%block contentC%} 
+<div class="card text-center">
+    <div class="card-body">
+        <br><br><br>
+      <h2 class="card-title">New to our app and want to find out more</h2>
+      <p class="card-text">Click this button below to sign up learn more about us!</p>
+      <br>
+      <a href="{{url_for('sign_up')}}" class="btn btn-primary">Signup for Free</a>
+      <br><br><br>
+
+    </div>
+  </div>
+{%endblock contentC%}
+
+{%block contentD%} 
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1>LUDYYYY</h1>
+            <img src="{{url_for('static',filename='theme_pics/LudwikProfile.jpg')}}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <h1>Sammy Boi</h1>
+            <img src="{{url_for('static',filename='theme_pics/SamProfile.jpg')}}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <h1>Raveena Ligma</h1>
+            <img src="{{url_for('static',filename='theme_pics/RaveenaProfile.jpg')}}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <h1>Jack Daniels</h1>
+            <img src="{{url_for('static',filename='theme_pics/JackProfile.jpg')}}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col">
+      <h1>Meet our members!</h1>
+      <ul>
+        <li>Ludyyyyy: Leader</li>
+        <li>Sammy Boi: owl in human form</li>
+        <li>Raveena Ligma: from India</li>
+        <li>Jack Daniels: alcohlic (surprise surprise)</li>
+        <li>Keegan: he was shy, no picture</li>
+        <li>Tom: not shy, just no photo</li>
+      </ul>
+    </div>
+    <div class="col">
+      Column
+      (Indeed is a column)
+    </div>
+  </div>
+</div>
+{%endblock contentD%} 
